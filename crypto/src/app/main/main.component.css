@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    color: red;
+    font-size: 46px;
+}
+
+p{
+    text-align: center;
+    color:blue !important;
+    font-size: 26px !important;
+}
+
+.card{
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+.img{
+    height: 35px !important;
+}

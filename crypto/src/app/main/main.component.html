@@ -1,0 +1,54 @@
+<br>
+<h1>
+    The Crypto Currencies prices are updated every 10 seconds. 
+</h1>
+<br>
+<div *ngIf="cryptos">
+    <div class="container">
+        <a [routerLink] = "['/details']">
+        <div class="row">
+
+            <div class="col-lg-4" id="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
+                <div class="card">
+                        <div class="example z-depth-1">
+                    <div class="card-body">
+                        <h1 class="card-title">
+                                <div class="row">
+                                        <div class="col-lg-6 text-center">
+                
+                                                <img src={{cryptos[crypto].logo_url}} height="60px"> 
+                                        </div>
+                                       <div class="col-lg-6 text-center">
+                                            {{cryptos[crypto].currency}}
+                                        </div>
+                                        
+                
+                                       </div>
+                            </h1>
+                        <hr>
+                        
+                                        <p class="card-text"> Rank: {{cryptos[crypto].rank}}</p>
+                                
+                                
+        
+                               
+                        
+                                    <p class="card-text">Name: {{cryptos[crypto].name}}</p>
+                                    <p class="card-text">Price: {{cryptos[crypto].price | currency:'USD':true}}</p>
+                                  
+                                    
+                            
+                           
+              
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+<br>
+<br>
+<br>
